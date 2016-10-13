@@ -1,10 +1,8 @@
-<?php 
-
-include "./src/Money.php";
-
-$a = new Money(1000);
-
-echo $a->getAmount();
-
-
+<?php
+class Test extends PHPUnit_Framework_TestCase
+{
+	public function testOnePlusOne() {
+		$this->assertEquals(1+1,1);
+  	}
+}
 ?>
