@@ -2,3 +2,10 @@ language: php
 php:
 - '7.0'
 script: phpunit ./src/MoneyTest.php
+deploy:
+  provider: releases
+  api_key:
+    secure: exlHDKRgFns5LdyNzuLBpxLuh/O/aR//xPxppBo7o2M3O+ERKoAp9ZEx/hK/MKA8Vy4n9DF6VilP3d5NFjW9Cjj7VOyejrHvpTi7mzpv5t3wZ0UyixzJWpGBMz1oUf09AlvKYOzNtkSlmGEBLqAsadH3KF0fpsD+mVDS203T1cwXJmcApzqCW8pbVRzeB7O3kAQyv3txd+vHXmr6/8HixZAZNOqBNUldQOHo+KoOMt1VFUXHtkyE+81dyHmmNhbBcsfwI0Un/PJi4qfK+UjaZj+0gMw5tBuzy+GDfJrNdOIjGbZVHh9kZkboIykV8PvtNZ0C330EAOx32qH2e4It5nAlavWFkgGuEv+fQlfg6s2jhIWVpEWnTf8BAQCPgPYGBJUwkc3uLV3zZ3gbX0gqrw9ww5/CJdIFSY/8rR9HgX+zWh9oSUEmaAaMqxz1A/YYEBNnsq2fhxVXIDkRsK8YCrtGSuFIONHYi3kgM7ctnWez1gY+rXyTChPMQpQBAMWOm1kl0q0a6iOO1sYjGdauKq6l1B6sUh0fVXkSWytBuvmK5ME2dRjnFKvcvq5xKEulowG+bM0VgMvOeU+AVPn749iXsV2m/nIsVjXiSID7qPoj3odC+Umy5P89jXzkAJiyEavS+Rh32L/nxvSx/5rtRcz5ki0CINhLTnwvnYYPVC4=
+  file: "*"
+  on:
+    repo: truong-dinh-tokyo/testgit
