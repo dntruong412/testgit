@@ -1,11 +1,4 @@
-# Required to run your project under the correct environment.
 language: php
 php:
-  - '7.0'
+- '7.0'
 script: phpunit ./src/MoneyTest.php
-after_success:
-  - eval "$(ssh-agent -s)" #start the ssh agent
-  - chmod 600 .travis/deploy_key.pem # this key should have push access
-  - ssh-add .travis/deploy_key.pem
-  - git remote add deploy https://github.com/truong-dinh-tokyo/testgitdone.git
-  - git push -u deploy
