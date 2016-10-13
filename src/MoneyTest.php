@@ -7,6 +7,9 @@ class MoneyTest extends TestCase
 
     public function testCanBeNegated()
     {
+
+        include "./Money.php";
+
         // Arrange
         $a = new Money(1);
 
