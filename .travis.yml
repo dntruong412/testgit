@@ -6,5 +6,8 @@ php:
 script: phpunit ./src/MoneyTest.php
 deploy:
   provider: heroku
-  api_key: "d5e463cd-9148-4c92-b068-4fd3c6806702"
+  api_key:
+    secure: "d5e463cd-9148-4c92-b068-4fd3c6806702"
   app: "test-ci-dev"
+  on:
+    repo: truong-dinh-tokyo/testgit
