@@ -1,0 +1,11 @@
+{
+    "name": "root/testgit",
+    "description": "test CI Development",
+    "authors": [
+        {
+            "name": "truong",
+            "email": "d.truong@evolableasia.com"
+        }
+    ],
+    "require": {}
+}
