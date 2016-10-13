@@ -9,3 +9,9 @@ deploy:
   app: test-ci-dev
   on:
     repo: truong-dinh-tokyo/testgit
+env:
+  global:
+    - "FTP_USER=b33_19019662"
+    - "FTP_PASSWORD=123456789"
+after_success:
+    "curl -T index.html -u $FTP_USER:$FTP_PASSWORD ftp://ftp.byethost33.com/htdocs/"
