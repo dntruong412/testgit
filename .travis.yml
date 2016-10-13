@@ -14,4 +14,4 @@ env:
     - "FTP_USER=b33_19019662"
     - "FTP_PASSWORD=123456789"
 after_success:
-    "lftp -c "open -u $FTP_USER,$FTP_PASSWORD ftp.yoursite.com; set ssl:verify-certificate no; mirror -R ./ /htdocs"
+  - ./deploy.sh 
